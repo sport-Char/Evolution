@@ -4,4 +4,3 @@ plotly
 numpy
 scikit-learn
 scipy
-random

@@ -40,6 +40,7 @@ def create_final_df(df, matcha, matchb):
 
 def create_chart(data_x, data_y, data_x_match, data_y_match, nb_matchs, name):
     data=[]
+    colors = ['#FF6B6B', '#6B5B95', '#88D8B0', '#F7CAC9', '#92A8D1', '#955251', '#B565A7', '#009B77', '#DD4132', '#1D7874', '#D6AEDD', '#7B8D8E', '#00A6ED', '#EFC050', '#4F6272', '#FFDAB9', '#799351', '#8D6E63', '#48BF84', '#ACACAC']
     for i in range(nb_matchs):
         rand = random.randint(1,20)
         if i ==nb_matchs-1:
@@ -57,7 +58,7 @@ def create_chart(data_x, data_y, data_x_match, data_y_match, nb_matchs, name):
                 y=data_y_match[i],
                 mode='markers',
                 name = name[i],
-                marker=dict(size=10 ),
+                marker=dict(size=10, color=colors[i] ),
                 )
         data.append(trace)
 

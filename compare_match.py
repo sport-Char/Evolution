@@ -125,7 +125,7 @@ def create_data_chart(df_chart, df_tot, columns, matchs):
     create_chart(data_x, data_y, data_x_match, data_y_match, nb_matchs, name_x_match)
 
 
-
+st.title("Z-Score sur une période donnée")
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
     df = pd.read_excel(io=uploaded_file)
